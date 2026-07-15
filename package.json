@@ -1,0 +1,24 @@
+{
+  "name": "safari-ai-v2",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.56.0",
+    "@supabase/ssr": "^0.6.1",
+    "next": "15.x",
+    "react": "19.x",
+    "react-dom": "19.x",
+    "tailwindcss": "^4.x",
+    "framer-motion": "^12.x",
+    "lucide-react": "^0.540.0",
+    "sonner": "^2.x",
+    "zod": "^4.x",
+    "react-hook-form": "^7.x"
+  }
+}
