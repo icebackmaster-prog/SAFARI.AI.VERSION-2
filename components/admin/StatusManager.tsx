@@ -1,12 +1,14 @@
+import UploadStatus from "@/components/status/UploadStatus";
+
 export default function StatusManager(){
 
 return(
 
 <div>
 
-<h2>Owner Status Manager</h2>
+<h2>Status Manager</h2>
 
-<button>Add Status</button>
+<UploadStatus/>
 
 </div>
 
