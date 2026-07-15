@@ -1,52 +1,23 @@
-"use client";
+import PremiumCard from "@/components/premium/PremiumCard";
+import PremiumFeatures from "@/components/premium/PremiumFeatures";
+import PremiumPin from "@/components/premium/PremiumPin";
 
-import { useState } from "react";
-
-export default function PremiumPage() {
-
-const [pin,setPin]=useState("");
-
-const [message,setMessage]=useState("");
-
-function unlock(){
-
-if(pin==="0000"){
-
-setMessage("✅ Premium Unlocked");
-
-}else{
-
-setMessage("❌ Wrong PIN");
-
-}
-
-}
+export default function PremiumPage(){
 
 return(
 
 <main>
 
-<h1>⭐ Premium</h1>
+<h1>⭐ SAFARI AI Premium</h1>
 
-<input
-
-type="password"
-
-placeholder="Enter PIN"
-
-value={pin}
-
-onChange={(e)=>setPin(e.target.value)}
-
+<PremiumCard
+title="Safari AI Premium"
+description="Unlock premium tools."
 />
 
-<button onClick={unlock}>
+<PremiumFeatures/>
 
-Unlock
-
-</button>
-
-<p>{message}</p>
+<PremiumPin/>
 
 </main>
 
