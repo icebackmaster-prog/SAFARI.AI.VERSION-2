@@ -1,26 +1,36 @@
 import ChatHeader from "@/components/chat/ChatHeader";
+import MessageList from "@/components/chat/MessageList";
 import ChatInput from "@/components/chat/ChatInput";
-import ChatBubble from "@/components/chat/ChatBubble";
-import FileUpload from "@/components/chat/FileUpload";
-import VoiceButton from "@/components/chat/VoiceButton";
+import ChatHistory from "@/components/chat/ChatHistory";
+import OnlineUsers from "@/components/chat/OnlineUsers";
+import ImagePreview from "@/components/chat/ImagePreview";
+import VideoPreview from "@/components/chat/VideoPreview";
+import PDFPreview from "@/components/chat/PDFPreview";
 
 export default function ChatPage() {
-  return (
-    <main>
 
-      <ChatHeader />
+return(
 
-      <ChatBubble
-        sender="SAFARI AI"
-        text="Hello! Welcome to SAFARI AI V2."
-      />
+<main>
 
-      <FileUpload />
+<ChatHeader/>
 
-      <VoiceButton />
+<OnlineUsers/>
 
-      <ChatInput />
+<MessageList/>
 
-    </main>
-  );
+<ImagePreview/>
+
+<VideoPreview/>
+
+<PDFPreview/>
+
+<ChatHistory/>
+
+<ChatInput/>
+
+</main>
+
+);
+
 }
