@@ -95,3 +95,38 @@ cursor:pointer;
 background:#2563eb;
 color:white;
 }
+.chat-header{
+padding:20px;
+background:#111827;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+.chat-input{
+display:flex;
+gap:10px;
+margin-top:20px;
+}
+
+.chat-input input{
+flex:1;
+padding:12px;
+border-radius:10px;
+border:none;
+}
+
+.chat-input button{
+padding:12px 20px;
+border:none;
+border-radius:10px;
+background:#2563eb;
+color:white;
+cursor:pointer;
+}
+
+.chat-bubble{
+padding:15px;
+background:#1f2937;
+border-radius:12px;
+margin:15px 0;
+}
