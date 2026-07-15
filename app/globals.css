@@ -308,3 +308,24 @@ border-radius:12px;
 font-weight:bold;
 margin-top:20px;
 }
+.premium-card{
+background:#202938;
+padding:20px;
+border-radius:12px;
+margin-bottom:20px;
+}
+
+.premium-features{
+background:#111827;
+padding:20px;
+border-radius:12px;
+margin-bottom:20px;
+}
+
+.premium-features ul{
+padding-left:20px;
+}
+
+.premium-features li{
+margin-bottom:10px;
+  }
