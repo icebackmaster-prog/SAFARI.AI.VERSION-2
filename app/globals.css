@@ -59,3 +59,39 @@ margin:15px 0;
 border-radius:12px;
 color:white;
 }
+.status-card{
+background:#202938;
+padding:20px;
+border-radius:12px;
+margin-top:20px;
+}
+
+.status-viewer{
+padding:20px;
+background:#111827;
+border-radius:12px;
+margin-bottom:20px;
+}
+
+.upload-status{
+display:flex;
+flex-direction:column;
+gap:15px;
+margin-top:20px;
+}
+
+.upload-status input,
+.upload-status textarea{
+padding:12px;
+border-radius:8px;
+border:none;
+}
+
+.upload-status button{
+padding:12px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+background:#2563eb;
+color:white;
+}
