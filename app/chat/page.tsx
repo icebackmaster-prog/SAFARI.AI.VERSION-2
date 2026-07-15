@@ -1,17 +1,25 @@
+import ChatHeader from "@/components/chat/ChatHeader";
+import ChatInput from "@/components/chat/ChatInput";
+import ChatBubble from "@/components/chat/ChatBubble";
+import FileUpload from "@/components/chat/FileUpload";
+import VoiceButton from "@/components/chat/VoiceButton";
+
 export default function ChatPage() {
   return (
     <main>
-      <h1>🤖 SAFARI AI Chat</h1>
 
-      <p>Ask anything...</p>
+      <ChatHeader />
 
-      <div className="chat-container">
+      <ChatBubble
+        sender="SAFARI AI"
+        text="Hello! Welcome to SAFARI AI V2."
+      />
 
-        <div className="messages">
+      <FileUpload />
 
-        </div>
+      <VoiceButton />
 
-      </div>
+      <ChatInput />
 
     </main>
   );
