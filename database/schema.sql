@@ -45,3 +45,32 @@ create table feedback (
   message text,
   created_at timestamp default now()
 );
+create table user_roles (
+  id bigint generated always as identity primary key,
+  user_id uuid not null,
+  role text not null default 'user',
+  created_at timestamp default now()
+);
+
+create table premium_accounts (
+  id bigint generated always as identity primary key,
+  user_id uuid not null,
+  active boolean default false,
+  expires_at timestamp,
+  created_at timestamp default now()
+);
+
+create table status_views (
+  id bigint generated always as identity primary key,
+  status_id bigint not null,
+  user_id uuid,
+  viewed_at timestamp default now()
+);
+
+create table status_replies (
+  id bigint generated always as identity primary key,
+  status_id bigint not null,
+  user_id uuid,
+  message text,
+  created_at timestamp default now()
+);
